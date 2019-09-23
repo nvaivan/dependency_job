@@ -10,8 +10,6 @@ foreach ($read as $line) {
 	$depen[trim($arr[0])] = trim($arr[1]);
 }
 
- echo "<pre>";
-print_r($depen);
 
 function buildTree(array $elements, $parent = '') {
     $branch = array();
@@ -40,7 +38,6 @@ function buildTree(array $elements, $parent = '') {
 }
 
 $TreeArray = buildTree($depen);
-//print_r($TreeArray);
 
 function printOut($TreeArray)
 {   	
